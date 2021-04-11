@@ -8,6 +8,9 @@ const session = require('express-session');
 const passport = require('passport');
 const auth0strategy = require('passport-auth0');
 
+//** import config */
+const config = require('./config.json');
+
 //** Import routes */
 const authRoutes = require('./routes/auth');
 
@@ -19,7 +22,7 @@ dotenv.config();
 
 //** Connect to database */
 mongoose.connect(
-    process.env.DB_CONNECT,
+    config.DB_CONNECT,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
@@ -40,10 +43,10 @@ if (app.get('env') === 'production') sess.cookie.secure = true;
 
 //** Configure Passport to use Auth0 */ 
 const strategy = new auth0strategy({
-    domain: process.env.AUTH0_DOMAIN,
-    clientID: process.env.AUTH0_CLIENT_ID,
-    clientSecret: process.env.AUTH0_CLIENT_SECRET,
-    callbackURL: process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
+    domain: config.AUTH0_DOMAIN,
+    clientID: config.AUTH0_CLIENT_ID,
+    clientSecret: config.AUTH0_CLIENT_SECRET,
+    callbackURL: config.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
 }, (accessToken, refreshToken, extraParams, profile, done) => {
 
     // accessToken is the token to call Auth0 API (not needed in the most cases)

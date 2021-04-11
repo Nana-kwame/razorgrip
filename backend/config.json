@@ -1,0 +1,6 @@
+{
+  "DB_CONNECT": "mongodb+srv://nanakwame:<password>@cluster0.q5vhi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "AUTH0_CLIENT_ID": "GyNJ7mWVJa1l5ax1uzUcQgSDPM0uOyDB",
+  "AUTH0_DOMAIN": "dev-wpr6kxgc.eu.auth0.com",
+  "AUTH_CLIENT_SECRET": "677g2Nyp_HXPT5_lTc4UlV2tZnRUjPbks9mrkWTVVWVLq3KODnv8pgEw3qj-4EIf"
+}
