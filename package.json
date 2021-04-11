@@ -1,0 +1,8 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Interview backend",
+  "main": "index.js",
+  "author": "Nana Kwame Acheampong",
+  "license": "MIT"
+}

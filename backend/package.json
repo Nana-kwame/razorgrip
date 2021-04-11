@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Interview backend",
+  "main": "index.js",
+  "author": "Nana Kwame Acheampong",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-ws": "^4.0.0",
+    "http": "^0.0.1-security",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-auth0": "^1.4.0",
+    "websocket": "^1.0.33",
+    "ws": "^7.4.4"
+  }
+}
